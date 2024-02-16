@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face { 
+    font-family: "cascadia"; 
+    src: url("/src/fonts/Cascadia.ttf"); 
+} 

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="./css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+
+<body class=" font-inter tracking-wide dark:bg-neutral-900">
+    <div
+        class="absolute top-0 z-[-2] h-full w-full bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)] dark:bg-neutral-900 dark:bg-[radial-gradient(ellipse_80%80%_at_50%-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+    </div>
+    <nav class="bg-white border-b-[1px]  border-black-medium dark:border-none dark:bg-neutral-800">
+        <div class=" flex flex-col md:max-w-screen-xl md:flex-row flex-wrap  items-center justify-between mx-auto p-4 ">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/src/img/shark.png" class="h-8" alt="Flowbite Logo" />
+                <span
+                    class="self-center text-black-medium text-2xl font-semibold whitespace-nowrap dark:text-white">Jred0n29</span>
+            </a>
+            <div class="flex flex-col md:flex-row items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                <button id="theme-toggle" type="button"
+                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <!-- Dropdown -->
+                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+                    id="language-dropdown-menu">
+
+
+                </div>
+                <button  id="theme-toggletwo"
+                type="button"
+                    class="  inline-flex items-center w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-language" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true"fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-neutral-800 md:dark:bg-none dark:border-gray-700">
+                    <li>
+                        <a href="#experiencia"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                            aria-current="page">Experiencia</a>
+                    </li>
+                    <li>
+                        <a href="#proyectos"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Sobre
+                            mi</a>
+                    </li>
+                    <li>
+                        <a href="#contacto"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="#playground"
+                            class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Playground</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+    <section class="relative " id="contacto">
+        <div class="container grid grid-rows-1 grid-cols-1  max-w-screen-lg gap-x-5 flex-wrap  items-center justify-center md:my-[185px] mx-auto p-4 md:flex flex-col my-[100px] ">
+            <div>
+                <div class="flex flex-col items-center">
+                    <div class="flex flex-col  items-center md:flex-row md:gap-x-6">
+                        <h1 class=" text-5xl   text-black-medium font-extrabold md:text-small dark:text-white"> I'm Mr </h1>
+                        <h1 class="mt-2 md:mt-0  text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-tr from-green-font  to-purple-font md:text-small">Jesús D,</h1>
+                    </div>
+                    <div class="flex flex-col items-center md:flex-row md:gap-x-6">
+                        <h2 class= "mt-2 text-5xl text-black-medium font-extrabold md:text-small md:mt-5 dark:text-white">Full-Stack </h2>
+                        <h2 class= "mt-2 text-5xl text-black-medium font-extrabold md:text-small md:mt-5 dark:text-white">Developer.</h2>
+                    </div>
+                </div>
+                <div class=" flex justify-end">
+                     <h1 class=" mt-3 px-2 inline-flex items-center rounded-md bg-green-50  py-1 text-xs font-medium text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80">Disponible para trabajar</h1> 
+                    </div>
+                <div class="mt-6 flex justify-center ">
+                    <p class=" items-center font-normal text-base text-black-medium dark:text-white"> <span class="text-blue-exp dark:text-white">+4 años de experiencia</span>
+                        escribiendo código en el ámbito del: Desarrollo Web,<br>
+                        Análisis de datos, Web scrapings, Automatización de procesos y algo mas.</p>
+                </div>
+                <ul class="flex gap-x-10 md:gap-x-14 flex-row justify-center mt-7 ">
+                    <li> <a href="https://github.com/Jred0n29" target="_blank"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="w-12 h-12  dark:fill-white"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z" stroke="#000000" stroke-linejoin="round"/>
+                        </svg></a></li>
+                    <li> <a href="mailto:jredon439@gmail.com"><img class="w-12 h-12 " src="icons/gmail.svg" alt=""></a></li>
+                    <li> <a href="https://www.linkedin.com/in/jesus-redondo-a-7707a1207/" target="_blank"><img class="w-12 h-12 " src="icons/linkedin.svg" alt=""></a></li>
+                </ul>
+            </div>
+    
+    
+        </div>
+    </section>
+    <section class="relative " id="proyectos">
+        <div class="container flex flex-col md:grid  grid-rows-1 grid-cols-2  max-w-screen-lg content-center  flex-wrap justify-center mx-auto ">
+        <div class="mx-4 mt-8 md:mt-32 ">
+            <div class="flex flex-col items-center">
+                <ul class=" flex gap-x-2 items-center">
+                    <li> <img class="rtl:rotate-180 w-8 h-8 " src="/src/icons/project.svg" alt=""></li>
+                    <li><h1 class="text-lg font-medium  text-red-title dark:text-white">PROYECTOS</h1> </li></ul>
+                <p class="text-lg  md:text-2xl  font-semibold  text-black-medium dark:text-white">
+                Algunos de mis últimos proyectos
+                </p>
+            </div>
+            
+            <div class="p-10 ">  
+                <!--Card 1-->
+                <div class="rounded-3xl p-[1.5px] bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800 ">
+                <div class="max-w-md  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+                  <img class="w-full" src="/src/img/dave.png" alt="Dave">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2 dark:text-white">Dave 1.0</div>
+                    <p class="text-base text-black-medium dark:text-white">
+                        Dave es una aplicación de escritorio que simplifica la gestión completa de productos de yogur.
+                        Con una interfaz intuitiva y funciones versátiles, facilita el control de contabilidad y
+                        distribución de manera precisa                    </p>
+                  </div>
+                  
+                  <div class="px-6 pt-4 pb-2 items-center">
+                    <a href="https://github.com/Jred0n29/dave" target="_blank" class="flex flex-row justify-center bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
+                    <span >Repository </span>
+                    <img class="w-6 h-6 rounded-full " src="/src/icons/arrow.svg" alt="">
+
+                    </a>
+                  </div>
+                </div>
+            </div>
+              </div>
+            
+                
+              <div class="p-10 ">  
+                <!--Card 1-->
+                <div class="rounded-3xl p-[2px] bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800 ">
+                <div class="max-w-md  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+                  <img class="w-full" src="/src/img/hotel.png" alt="Hotel">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2 dark:text-white">Gestor Hotelero Web</div>
+                    <p class="text-black-medium text-base dark:text-white">
+                        Creé una plataforma web para la gestión hotelera, facilitando la administración de clientes, reservas y seguimientos estadisticos.                   </p>
+                  </div>
+                  
+                  <div class="px-6 pt-4 pb-2 items-center">
+                    <a href="https://github.com/Jred0n29/hotelApp" target="_blank" class="flex flex-row justify-center bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
+                    <span >Repository </span>
+                    <img class="w-6 h-6 rounded-full " src="/src/icons/arrow.svg" alt="">
+
+                    </a>
+                  </div>
+                </div>
+            </div>
+              </div>
+            </div>    
+            <div class="mx-4 mt-1">
+                <div class="p-10 ">  
+                    <!--Card 1-->
+                    <div class="rounded-3xl p-[2px] bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800 ">
+                    <div class="max-w-md  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+                      <img class="w-full" src="/src/img/wexcel.jpg" alt="Hotel">
+                      <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 dark:text-white">Wexcel 0.0.1</div>
+                        <p class="text-black-medium text-base dark:text-white">
+                            Wexcel es un proyecto de código abierto que utiliza un bot de WhatsApp para automatizar la gestión financiera personal.
+                             Registra las transacciones diarias en el chat y las transfiere a una hoja de Google Sheets. (En proceso)                      </div>
+                      
+                      <div class="px-6 pt-4 pb-2 items-center">
+                        <a href="https://github.com/Jred0n29/wexcel" target="_blank" class="flex flex-row justify-center bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
+                        <span >Repository </span>
+                        <img class="w-6 h-6 rounded-full " src="/src/icons/arrow.svg" alt="">
+    
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                  </div>
+                  <div class="p-10 ">  
+                    <!--Card 1-->
+                    <div class="rounded-3xl p-[2px] bg-gradient-to-b from-blue-300 to-pink-300 dark:from-blue-800 dark:to-purple-800 ">
+                    <div class="max-w-md  overflow-hidden shadow-lg rounded-[calc(1.5rem-1px)]  bg-white dark:bg-neutral-800">
+                      <img class="w-full" src="/src/img/jaya.jpg" alt="Jaya Algoritm">
+                      <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2 dark:text-white">Jaya Optimization</div>
+                        <p class="text-black-medium text-base dark:text-white">
+                            Implementación del algoritmo Jaya el cual es un algoritmo metaherustico para resolver problemas de optimización.
+                            Me enfoqué en desarrollar un código limpio y seguir buenas prácticas de programación, asegurando eficiencia y legibilidad.                     </div>
+                      
+                      <div class="px-6 pt-4 pb-2 items-center">
+                        <a href="https://github.com/Jred0n29/JAYA"  target="_blank" class="flex flex-row justify-center bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">
+                        <span >Repository </span>
+                        <img class="w-6 h-6 rounded-full " src="/src/icons/arrow.svg" alt="">
+    
+                        </a>
+                      </div>
+                    </div>
+                </div>
+                  </div>
+            </div>
+            
+        </div>
+
+
+    </section>
+    <section class="relative " id="about">
+        <div class=" container flex flex-col  md:grid  gap-x-5 grid-rows-1 grid-cols-2  max-w-screen-lg content-center  flex-wrap justify-center mt-48 mb-10 mx-auto ">
+            <div class="mx-4">
+            <div class="flex flex-col items-center">
+                    <ul class=" flex gap-x-2  ">
+                        <svg class="rtl:rotate-180 w-8 h-8 ms-2" aria-hidden="true" viewBox="0 0 1024 1024" class="icon" version="1.1"fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M822.431 296.172c-3.469 36.542-6.416 82.255-15.612 118.355-17.246 67.718-37.5 82.61-93.818 84.015-38.805 0.968-74.218-95.471-72.953-220.768 0.833-82.372 50.497-178.063 54.715-202.37-68.419-1.181-198.916 18.234-270.479 149.873-70.659 129.97-58.109 270.825-94.286 273.265-42.58 2.872-87.903-71.043-72.953-147.179 15.084-76.812 18.64-82.934 36.477-110.384-99.337 38.149-143.654 113.724-145.906 202.372v147.177c0 203.211 163.311 367.947 364.766 367.947s364.766-164.736 364.766-367.947V443.351c-0.002-75.049-27.039-124.556-54.717-147.179z m18.238 185.506v125.716c0 173.575-146.979 314.286-328.289 314.286S184.091 780.969 184.091 607.394V481.678c-1.952-91.593 21.231-152.244 56.717-179.997-20.653 43.052-29.035 94.357-17.474 133.71 16.798 57.182 45.169 98.061 106.663 99.946 62.696 1.922 62.73-72.698 109.43-220.768 43.822-138.947 149.873-202.804 200.621-202.37-3.795 20.763-43.812 107.498-36.477 220.768 6.917 106.809 46.047 197.523 109.43 202.37 59.328 4.536 84.775-27.371 101.53-52.927 18.584-28.344 27.667-108.731 27.667-108.731s-0.959 74.94-1.529 107.999z" fill="#de4c1b"></path></g></svg>
+                   <li><h1 class="mt-1 text-lg font-medium  text-red-title dark:text-white">
+                   Sobre mi 
+                </h1> </li>                      
+                </ul>
+                    <p class=" text-2xl font-bold  text-black-medium dark:text-white">
+                        Un poco acerca de mi
+                    </p>
+                </div>
+                <div
+                    class=" mt-6 flex flex-col p-4">
+                    <p class=" m-2 dark:text-white"> ¡Hola! Soy Jesús D. Redondo. A los 16 años, descubrí la programación, 
+                        convirtiéndome, a mis 21, en el arquitecto digital de muchos sueños. Mi enfoque no solo abarca soluciones técnicas, sino que se destaca por la optimización y el código limpio. Mis habilidades blandas sobresalen, 
+                        destacando en comunicación, trabajo en equipo y resolución creativa de problemas. Soy apasionado por la eficiencia y la elegancia en el código, comprometido con la excelencia. 
+                    </p>
+                    <div class="mx-auto flex flex-col ">
+                        <button type="button" class=" mt-6 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Descargar CV</button>
+  
+   
+                       </div>
+                </div>
+                
+                
+            </div>    
+            <div class="mx-4 mt-1">
+                <div
+                    class="object-fill flex flex-col items-center p-2">
+                    
+                    <img class=" border-[3px] border-s-blue-500  border-r-green-500 border-b-purple-600  border-t-orange-500 rounded-full w-full md:w-96 md:h-96 " src="/src/img/fotomia.png" alt="image description">
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="relative mt-36" id="experiencia">
+        <div class=" container flex flex-col  md:grid  gap-x-5  grid-cols-2  max-w-screen-lg content-center  flex-wrap justify-center  mx-auto ">
+            <div class="mx-4 flex col-span-2">
+            <div class="flex flex-col items-center ">
+                    <ul class="flex flex-row gap-x-2 items-center ">
+                        <li>
+                        <img class="w-12 h-12  " src="icons/too.svg" alt="">
+                   <li><h1 class="mt-1 text-lg font-medium  text-red-title dark:text-white">
+                   Tools
+                </h1> </li>                      
+                </ul>
+                    <p class=" mt-1 text-2xl font-bold  text-black-medium dark:text-white">
+                        Mi stack de tecnologias
+                    </p>
+                </div> 
+            </div>    
+            <div class="mx-4 mt-1 col-span-2">
+                <div
+                    class=" mt-6 flex flex-col items-center  col-span-2 ">
+                    <ul class=" flex gap-x-2  ">
+                        <img class="w-8 h-8 " src="icons/web.svg" alt="">
+                   <li><h1 class="text-lg  md:text-2xl  font-semibold  text-black-medium dark:text-white">
+                   Web Development
+                </h1> </li>                      
+                </ul>
+                    <ul class=" flex flex-row flex-wrap gap-x-5 justify-center items-center mt-3">
+                    
+                        <li href="#"
+                        class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        Python
+                            <img class="w-8 h-8 pl-1 rounded-full " src="icons/python.svg" alt="">
+                    
+                        </li>
+                        <li href="#"
+                            class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                            Django
+                            <img class="w-8 h-8 rounded-full " src="icons/django.svg" alt="">
+                        </li>
+                    
+                        <li href="#"
+                        class="inline-flex   items-center px-3  mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        JavaScript
+                            <img class="w-8 h-8  pl-1" src="icons/js.svg" alt="">
+                    
+                        <li href="#"
+                        class="inline-flex   items-center px-3 mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        VueJs
+                            <img class="w-8 h-8 rounded-full " src="icons/vue.svg" alt="">
+                    
+                    
+                    </ul>
+                    <ul class=" flex flex-row flex-wrap gap-x-5 justify-center items-center mt-3">
+                    
+                        <li href="#"
+                        class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        HTML
+                            <img class="w-8 h-8  " src="icons/html.svg" alt="">
+                    
+                    
+                        </li>
+                        <li href="#"
+                        class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        CSS
+                            <img class="w-8 h-8 " src="icons/css.svg" alt="">
+                        </li>
+                    
+                        <li href="#"
+                        class="inline-flex   items-center px-3 mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        Bootstrap
+                            <img class="w-8 h-8  pl-1" src="icons/bt.svg" alt="">
+                    
+                        <li href="#"
+                        class="inline-flex   items-center px-3 mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        Tailwinds
+                            <img class="w-8 h-8 " src="icons/tailwin.svg" alt="">
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="mx-4  col-span-2">
+                <div
+                    class=" mt-6 flex flex-col items-center  col-span-2 ">
+                    <ul class=" flex gap-x-2  ">
+                        <img class="w-8 h-8 " src="icons/database.svg" alt="">
+                   <li><h1 class="text-lg  md:text-2xl  font-semibold  text-black-medium dark:text-white">
+                   Data Processing And Database
+                </h1> </li>                      
+                </ul>
+                    
+                <ul class=" flex flex-row flex-wrap gap-x-5 justify-center items-center mt-3">
+                   
+                        
+                    </li>
+                    <li href="#" 
+                    class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                    Pandas
+                        <img class="w-8 h-8 " src="icons/pandas.svg" alt="">
+                    </li>
+                    
+                    <li href="#" 
+                    class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                    Numpy
+                        <img class="w-8 h-8 " src="icons/numpy.svg" alt="">
+                    
+                        <li href="#" 
+                        class="inline-flex   items-center px-3 mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        Matploblip
+                            <svg class="rtl:rotate-180 w-8 h-8 ms-2" aria-hidden="true"viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 4L16 28L30 4H24.5L16 18.5L7.5 4H2Z" fill="#41B883"></path> <path d="M7.5 4L16 18.5L24.5 4H19.5L16.0653 10.0126L12.5 4H7.5Z" fill="#35495E"></path> </g></svg></li> 
+                            <li href="#"
+                            class="inline-flex   items-center px-3 mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                                PostgreSQL
+                                <img class="w-8 h-8 " src="icons/postgresql.svg" alt="">
+                            </li>
+                            <li href="#" 
+                            class="inline-flex   items-center px-3  mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                                MySQL
+                                <img class="w-8 h-8 " src="icons/mysql.svg" alt="">
+                            </li>   
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-4  col-span-2">
+                    <div
+                        class=" mt-6 flex flex-col items-center  col-span-2 ">
+                        <ul class=" flex gap-x-2  ">
+                            <svg class="rtl:rotate-180 w-8 h-8 ms-2" height="200px" width="200px" version="1.1" id="Layer_1"xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 297 297" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g id="XMLID_29_"> <g> <path style="fill:#A38671;" d="M279.075,17.918c5.31,5.31,8.12,12.65,7.7,20.15c-0.41,7.46-3.98,14.43-9.8,19.12l-90.36,66.83 c-1.76-2.71-3.79-5.23-6.1-7.54s-4.83-4.33-7.53-6.1l66.83-90.35c4.69-5.83,11.65-9.4,19.12-9.81 C266.415,9.808,273.775,12.608,279.075,17.918z M267.865,48.028c5.21-5.21,5.21-13.68,0-18.89c-2.53-2.53-5.88-3.92-9.45-3.92 s-6.93,1.39-9.45,3.92c-5.21,5.21-5.21,13.68,0,18.89c2.61,2.61,6.03,3.91,9.45,3.91 C261.835,51.938,265.255,50.638,267.865,48.028z"></path> <path style="fill:#BDC3C7;" d="M173.325,123.678c13.3,13.3,15.2,35.92,5.37,63.7c-10.6,29.93-33.64,63.5-66.75,97.31 l-99.64-99.64c33.81-33.11,67.38-56.15,97.31-66.75C137.395,108.468,160.015,110.378,173.325,123.678z"></path> <path d="M286.275,10.718c7.35,7.36,11.24,17.53,10.67,27.91c-0.58,10.39-5.57,20.07-13.69,26.56c-0.05,0.04-0.1,0.08-0.15,0.12 l-91.82,67.91c5.87,15.39,4.94,35.15-3,57.56c-11.47,32.41-36.62,68.63-72.72,104.73c-0.96,0.95-2.25,1.49-3.6,1.49 s-2.64-0.54-3.6-1.49L1.485,188.628c-1.98-1.99-1.98-5.21,0-7.2c36.1-36.1,72.32-61.24,104.73-72.72 c22.42-7.94,42.17-8.87,57.56-3l67.91-91.82c0.04-0.05,0.08-0.1,0.12-0.15c6.5-8.12,16.18-13.11,26.56-13.68 C268.765-0.522,278.925,3.368,286.275,10.718z M286.775,38.068c0.42-7.5-2.39-14.84-7.7-20.15c-5.3-5.31-12.66-8.11-20.14-7.7 c-7.47,0.41-14.43,3.98-19.12,9.81l-66.83,90.35c2.7,1.77,5.22,3.79,7.53,6.1s4.34,4.83,6.1,7.54l90.36-66.83 C282.795,52.498,286.365,45.528,286.775,38.068z M178.695,187.378c9.83-27.78,7.93-50.4-5.37-63.7 c-13.31-13.3-35.93-15.21-63.71-5.38c-29.93,10.6-63.5,33.64-97.31,66.75l99.64,99.64 C145.055,250.878,168.095,217.308,178.695,187.378z"></path> <path d="M267.865,29.138c5.21,5.21,5.21,13.68,0,18.89c-2.61,2.61-6.03,3.91-9.45,3.91c-3.42,0-6.84-1.3-9.45-3.91 c-5.21-5.21-5.21-13.68,0-18.89c2.52-2.53,5.88-3.92,9.45-3.92C261.985,25.218,265.335,26.608,267.865,29.138z M260.795,40.958 c1.31-1.31,1.31-3.44,0-4.75c-0.64-0.64-1.48-0.99-2.38-0.99s-1.74,0.35-2.38,0.99c-1.31,1.31-1.31,3.44,0,4.75 S259.475,42.268,260.795,40.958z"></path> </g> </g> </g> </g></svg>
+                       <li><h1 class="text-lg  md:text-2xl  font-semibold  text-black-medium dark:text-white">
+                       Desktop And Scrapings
+                    </h1> </li>                      
+                    </ul>
+                        
+                    <ul class=" flex flex-row flex-wrap gap-x-5 justify-center items-center mt-3">
+                       
+                            
+                        </li>
+                        <li href="#" 
+                        class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        PyQt
+                            <img class="w-8 h-8 pl-1" src="icons/pyqt.svg" alt="">
+                        </li>
+                        
+                        <li href="#" 
+                        class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        PySide
+                            <!-- <img class="w-8 h-8 " src="icons/git.svg" alt=""> -->
+                        
+                            <li href="#" 
+                            class="inline-flex   items-center px-3 mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                                Scapy
+                                <img class="w-8 h-8 " src="icons/scapy.svg" alt="">
+                                <li href="#"
+                                class="inline-flex   items-center px-3 mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                                Selenium
+                                    <img class="w-8 h-8 pl-1" src="icons/selenium.svg" alt="">
+                                </li>
+                                <li href="#"
+                                class="inline-flex   items-center px-3  mt-1 text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                                Bsoup
+                                    <!-- <svg class="rtl:rotate-180 w-8 h-8 ms-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#00758F" fill-rule="evenodd" d="M5.46192862,4.04007684 C5.18892668,4.03501656 4.99575061,4.06967946 4.79169495,4.11446291 L4.79169495,4.15152944 L4.82901449,4.15152944 C4.95944313,4.41909158 5.18943271,4.591394 5.35034952,4.82188962 C5.47407329,5.08262038 5.59817658,5.34297163 5.72227987,5.60332288 C5.73493056,5.5909252 5.74745474,5.57865403 5.75959941,5.56625635 C5.99047454,5.40394797 6.0957283,5.14410275 6.09471625,4.74737704 C6.00211318,4.64996671 5.98832392,4.52826705 5.90837155,4.4122602 C5.80235875,4.25754224 5.59615247,4.17012595 5.46192862,4.04007684 L5.46192862,4.04007684 Z M23.478665,23.1369293 C23.6543831,23.2658398 23.772161,23.4657208 24,23.5466852 L24,23.5093657 C23.8800714,23.3573044 23.8495833,23.1474294 23.7395222,22.9880306 C23.5786054,22.8271138 23.4164236,22.6655645 23.2555068,22.5040152 C22.7821179,21.8759083 22.1818425,21.3245911 21.5432356,20.8663831 C21.0345512,20.5006515 19.8944709,20.0072745 19.6819392,19.4148426 C19.6697946,19.4021919 19.6571439,19.3896677 19.6444932,19.3770171 C20.0054174,19.3365348 20.4283301,19.2059797 20.7614228,19.1165393 C21.3210894,18.9665021 21.8214243,19.0054662 22.3990549,18.8560615 C22.6600387,18.781296 22.9203899,18.7066569 23.1808677,18.6329033 L23.1808677,18.4834987 C22.8887632,18.1836773 22.6805328,17.7869515 22.3622414,17.5155942 C21.5283078,16.8061434 20.6188495,16.0966926 19.6818127,15.5056522 C19.1626283,15.1774933 18.5200996,14.9645821 17.969415,14.6865199 C17.7842089,14.5931578 17.4590861,14.5444526 17.3365009,14.3887226 C17.0476856,14.0198284 16.8899314,13.5523853 16.6667732,13.1228943 C16.1997097,12.2230506 15.740363,11.2403448 15.3263059,10.293567 C15.044322,9.6481287 14.8597484,9.01154587 14.5076796,8.43227067 C12.8174206,5.65329311 10.9976185,3.97581132 8.17942382,2.3270466 C7.57927498,1.97649592 6.85742648,1.83809735 6.09471625,1.65719245 C5.68546635,1.6325236 5.27545742,1.60734872 4.86620752,1.58267987 C4.61635635,1.47831166 4.35651113,1.17267094 4.12184079,1.02427832 C3.18796669,0.434503045 0.792811133,-0.848656668 0.10157731,0.838313141 C-0.335124586,1.90286889 0.753847001,2.94174374 1.14361483,3.48142227 C1.4172493,3.85980447 1.76704094,4.2842352 1.96287366,4.70967798 C2.09127818,4.98938478 2.11316388,5.27010364 2.22385744,5.56600333 C2.49432924,6.29518923 2.7293791,7.08838764 3.07929725,7.76241652 C3.25653344,8.10322617 3.45173363,8.46263233 3.67539786,8.76738751 C3.81265788,8.95449125 4.04720171,9.03684725 4.08401522,9.32578906 C3.85465817,9.64749617 3.84150145,10.1466925 3.7125909,10.5541713 C3.13065906,12.3887747 3.35014857,14.6686824 4.19660638,16.0266077 C4.45594557,16.443195 5.06773305,17.3374725 5.90837155,16.9942592 C6.64375629,16.6946908 6.47980332,15.76613 6.69018433,14.9469976 C6.73749792,14.760906 6.70865434,14.624405 6.80176344,14.5003017 L6.80176344,14.5373682 C7.02542767,14.9840642 7.2488389,15.4307601 7.47199711,15.8773296 C7.96815726,16.6759678 8.84826592,17.5111665 9.59415073,18.0739958 C9.98037636,18.3659737 10.2848785,18.8709894 10.7852134,19.0419002 L10.7852134,19.0040746 L10.7478939,19.0040746 C10.6504835,18.8536579 10.4989282,18.790531 10.3759635,18.6694638 C10.0844916,18.3836847 9.76050733,18.0287063 9.51938514,17.7014329 C8.84080201,16.780589 8.24153872,15.7725818 7.69553484,14.7235864 C7.43455106,14.2224925 7.20785066,13.6697838 6.98785512,13.1600874 C6.90322199,12.9633691 6.90423404,12.6662043 6.72737736,12.5643663 C6.48650818,12.9378147 6.13190928,13.2401663 5.94556458,13.6811694 C5.64776729,14.386319 5.60943569,15.2461865 5.49899515,16.1379338 C5.43371758,16.1614641 5.46268766,16.1453977 5.42422956,16.1750003 C4.90555118,16.0502645 4.72350772,15.5164053 4.53096418,15.0584502 C4.04378602,13.9006589 3.95333357,12.0360734 4.38206553,10.7030699 C4.4930121,10.3583386 4.99499157,9.27202362 4.79131543,8.95347919 C4.69441112,8.63544079 4.37510765,8.45187925 4.19635337,8.20885945 C3.97420721,7.90853201 3.75332613,7.5134509 3.59974672,7.16644241 C3.20150293,6.26368901 3.01528474,5.25024206 2.59540827,4.33749461 C2.39451528,3.90142525 2.0550972,3.45966308 1.77627595,3.07166635 C1.46759906,2.64204884 1.12185564,2.32578153 0.882884062,1.80583808 C0.797744903,1.62126448 0.681991069,1.32587082 0.808244978,1.13598393 C0.848094658,1.00783242 0.905022773,0.954446496 1.03190922,0.912572704 C1.24810955,0.746089595 1.84889092,0.967982736 2.07394674,1.06147135 C2.67055338,1.30929841 3.16924367,1.54548684 3.67489184,1.88035066 C3.91740561,2.04126747 4.16295554,2.35272751 4.45607208,2.43887872 L4.79118892,2.43887872 C5.31568662,2.5591868 5.90280525,2.47645128 6.39200751,2.62509691 C7.25744137,2.8881048 8.0329288,3.29722819 8.73719284,3.74202653 C10.8826237,5.09653615 12.6370217,7.02526068 13.8370664,9.32578906 C14.030116,9.69620133 14.1138635,10.0496617 14.2836358,10.4427187 C14.6265961,11.2350315 15.0591233,12.0501156 15.4004389,12.825097 C15.7408691,13.5978013 16.0728232,14.3779695 16.5541821,15.0213837 C16.8071959,15.3594102 17.7850944,15.5408211 18.2297663,15.7288104 C18.5412263,15.8602511 19.0514287,15.9976376 19.3460633,16.1750003 C19.9100312,16.5151775 20.4556556,16.9197466 20.9842015,17.292183 C21.2483479,17.4785277 22.0606489,17.886639 22.1006251,18.2223884 C20.7916579,18.1877255 19.7916207,18.3092986 18.9366869,18.6695903 C18.6936671,18.7716814 18.3064295,18.7747176 18.2664533,19.0787137 C18.4000446,19.2186304 18.4211712,19.4281259 18.527437,19.6000488 C18.7309867,19.9304848 19.0755915,20.3728795 19.3833829,20.6053993 C19.7195118,20.8590456 20.0657612,21.130403 20.4255469,21.3498925 C21.0663045,21.7407989 21.7818276,21.9638306 22.3984224,22.3551165 C22.7632683,22.5861182 23.1241926,22.8764515 23.478665,23.1369293 L23.478665,23.1369293 Z"></path> </g></svg> -->
+                                </li>
+                                
+                        </ul>
+                        
+                    </div>
+  
+            </div>
+            <div class="mx-4  col-span-2">
+                <div
+                    class=" mt-6 flex flex-col items-center  col-span-2 ">
+                    <ul class=" flex gap-x-2 items-center ">
+                        <img class="w-6 h-6 " src="icons/others.svg" alt="">
+                   <li><h1 class="text-lg  md:text-2xl font-semibold  text-black-medium dark:text-white">
+                   Other tools
+                </h1> </li>                      
+                </ul>
+                    
+                <ul class=" flex flex-row flex-wrap gap-x-5 justify-center items-center mt-3">
+                   
+                        
+                    </li>
+                    <li href="#" 
+                    class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                    Git
+                        <img class="w-8 h-8 pl-1" src="icons/git.svg" alt="">
+                    </li>
+                    
+                    <li href="#"
+                    class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                    GitHub
+                        <img class="w-8 h-8 pl-1" src="icons/github.svg" alt="">
+
+                    
+                        <li href="#" 
+                        class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                        Heroku
+                           <img class="w-8 h-8 pl-1" src="icons/heroku.svg" alt="">
+                           <li href="#" 
+                           class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                           Figma
+                                <img class="w-8 h-8 " src="icons/figma.svg" alt="">
+                            </li>
+                            <li href="#" 
+                            class="inline-flex   items-center px-3  text-base font-medium text-center  border-black-medium border-[1px] rounded-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-300  dark:focus:ring-gray-600 dark:bg-neutral-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                                Bash
+                                <img class="w-8 h-8 pl-1" src="icons/bash.svg" alt="">
+                            </li>   
+                    </ul>
+                </div>
+                </div>
+            </div>
+            
+    </section>
+    
+
+<footer class="bg-white dark:bg-neutral-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="flex flex-col items-center">
+        <div >
+          <span class="text-sm text-black-medium sm:text-center dark:text-white">© 2023 <a href="https://github.com/Jred0n29" class="hover:underline">Jred0n29</a>. Hecho con &lt;3
+          </span>
+        </div>
+        <div class="flex flex-row mt-2 gap-x-2">
+              <a href="#" class="text-black-medium hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true"fill="currentColor" viewBox="0 0 21 16">
+                        <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                    </svg>
+                  <span class="sr-only">Discord community</span>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true"fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              <a href="https://github.com/Jred0n29" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4 dark:fill-white" aria-hidden="true"fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="sr-only">GitHub account</span>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+</footer>
+
+    </main>
+    
+    <script>
+        document.getElementById('theme-toggletwo').addEventListener('click', function() {
+            console.log(111)
+            var menu = document.getElementById('navbar-language');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+    </script>
+    
+    
+    <script src="js/main.js"></script>
+    
+    
+        
+    <!-- <script src="js/base.js"></script>
+    <script src="js/commands.js"></script> -->
+
+</body>
+
+</html>
